@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
+import Container from 'components/Container';
 
 function App() {
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-orange-300 text-center">Ahmad Nurdiansah</h1>
-    </div>
+    <>
+      <Container />
+    </>
   );
 }
 
