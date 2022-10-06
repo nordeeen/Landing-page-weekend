@@ -4,7 +4,7 @@ import heroNav from '../assets/hero-nav.png';
 const Navbar = () => {
   return (
     <>
-      <nav className="w-[1366px] h-[67px] bg-[#FFFFFF] left-0 top-0 flex">
+      <nav className="mx-w-full h-[67px] bg-[#FFFFFF] flex">
         <div className="w-[33px] h-[33px] absolute left-[213px] top-[17px]">
           <img src={heroNav} alt="hero-nav" />
         </div>
