@@ -1,22 +1,22 @@
 import React from 'react';
-import bgContent from '../assets/bg-content.png';
+import bgContent from 'assets/bg-home.svg';
 import heroContent from 'assets/Bitmap.png';
 import heroRight from 'assets/Hero-Content-Right.png';
 import pathPinkRight from 'assets/path-pink-right-second.png';
 import smallOval from 'assets/small-oval.png';
+import SecondContent from './SecondContent';
 
 // w-[1366px] h-[800px]
 // w-[1366px] h-[731.43px] left-0 top-0
 const FirstContent = () => {
   return (
     <>
-      <div className="absolute md:mx-w-full bg-[#EEBECE]">
+      <div className="absolute w-full h-screen bg-[#EEBECE]">
         <div
           style={{
             backgroundImage: `url(${bgContent})`,
-            width: '1366px',
-            height: '731.43px',
           }}
+          className="w-full h-[725px] bg-[#EEBECE]"
         >
           <div className="flex justify-center items-center">
             <div className="my-[128px] text-center">
@@ -44,7 +44,7 @@ const FirstContent = () => {
           </div>
         </div>
         <div className="bg-[#EEBECE] text-white w-full h-screen flex justify-center items-center">
-          <div className="flex absolute right-[-2px] bottom-[466px]">
+          <div className="flex absolute right-[1px] bottom-[-255px]">
             <img
               src={heroRight}
               alt="hero-right"
@@ -56,7 +56,7 @@ const FirstContent = () => {
               className="w-[60px] h-[158px] object-contain"
             />
           </div>
-          <div className="w-[619px] h-[160px]">
+          <div className="w-[619px] h-[160px] px-auto">
             <p className="text-right text-black">
               <span className="text-blue-900">Deffinition;</span> a practice or
               exercise to test or improve one's fitness for athletic
@@ -64,16 +64,20 @@ const FirstContent = () => {
               as a mine) by working to devise, arrange, or achieve by resolving
               difficulties. Merriam-Webster.com Dictionary.
             </p>
-            <p className="text-right mt-6">-weekend team</p>
+            <p className="text-right mt-6 my-20">-weekend team</p>
+            <div className="flex flex-col">
+              <h2 className="text-black-900 flex justify-center text-4xl font-extrabold text-center">
+                Testimonial
+              </h2>
+              <img
+                src={smallOval}
+                alt="oval"
+                className="w-[89px] h-[89px] object-contain mt-[2px] ml-[-180px]"
+              />
+            </div>
           </div>
         </div>
-        <div>
-          <img
-            src={smallOval}
-            alt="small-oval"
-            className="w-[89px] h-[89px] ml-60 mb-10"
-          />
-        </div>
+        <SecondContent />
       </div>
     </>
   );

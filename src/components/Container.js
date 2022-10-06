@@ -8,10 +8,8 @@ import FirstContent from './FirstContent';
 const Container = () => {
   return (
     <>
-      <div>
-        <Navbar />
-        <FirstContent />
-      </div>
+      <Navbar />
+      <FirstContent />
     </>
   );
 };
