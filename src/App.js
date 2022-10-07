@@ -1,10 +1,10 @@
 import React from 'react';
-import Container from 'components/Container';
+import WrapperContent from 'components/WrapperContent';
 
 function App() {
   return (
     <>
-      <Container />
+      <WrapperContent />
     </>
   );
 }
