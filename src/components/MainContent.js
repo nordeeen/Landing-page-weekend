@@ -23,8 +23,8 @@ const MainContent = () => {
         {/* TEXT RESOURCES */}
         <div className="flex justify-center items-center text-white mt-20 pb-20">
           <div className="w-[619px] h-auto">
-            <h1 className="text-center text-white uppercase text-[32px] pb-20 font-extrabold">
-              resources
+            <h1 className="text-center text-white text-[32px] pb-20 font-extrabold">
+              Resource
             </h1>
             <p className="text-center text-lg text-white">
               These cases are perfectly simple and easy to distinguish. In a
