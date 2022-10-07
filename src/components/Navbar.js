@@ -7,7 +7,7 @@ import smallOval from 'assets/small-oval.png';
 const Navbar = () => {
   return (
     <>
-      <nav className="w-full h-screen bg-[#EEBECE] relative">
+      <nav className="w-full h-auto bg-[#EEBECE] relative">
         {/* bgImage Content */}
         <div className="relative w-auto h-screen">
           <img
@@ -49,7 +49,7 @@ const Navbar = () => {
               height: '125px',
               position: 'absolute',
               right: '0px',
-              bottom: '-250px',
+              top: '750px',
             }}
           />
           <div className="w-[619px] h-auto">
