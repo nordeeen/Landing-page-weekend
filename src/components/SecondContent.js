@@ -8,17 +8,17 @@ const SecondContent = () => {
   return (
     <>
       <div className="w-full h-auto pt-9 bg-black">
-        <div className="flex justify-center items-center">
-          <h1 className="text-white text-[32px] text-center font-extrabold pb-5">
+        <div className="flex lg:justify-center lg:items-center">
+          <h1 className="text-white text-[32px] lg:text-center text-left lg:ml-0 ml-[34px] font-extrabold pb-5">
             Help & Tips
           </h1>
         </div>
 
         <div className="flex justify-center items-center">
-          <div className="w-[1000px] h-[200px]">
-            <div className="flex justify-between">
+          <div className="w-[1000px] lg:h-[200px] h-[600px]">
+            <div className="flex justify-between lg:flex-row flex-col lg:ml-0 ml-[34px]">
               {/* Card Image Slider */}
-              <div className="w-[311px] relative">
+              <div className="w-[311px] relative lg:mb-0 mb-4">
                 <div className="w-[311px] h-[72px] bg-black absolute bottom-0 mix-blend-normal opacity-[.5]">
                   <div className="p-2 flex justify-between">
                     <div className="w-[218px] h-[38px]">
@@ -39,7 +39,7 @@ const SecondContent = () => {
               </div>
 
               {/* Card Image Slider */}
-              <div className="w-[311px] relative">
+              <div className="w-[311px] relative lg:mb-0 mb-4">
                 <div className="w-[311px] h-[72px] bg-black absolute bottom-0 mix-blend-normal opacity-[.5]">
                   <div className="p-2 flex justify-between">
                     <div className="w-[218px] h-[38px]">
@@ -60,7 +60,7 @@ const SecondContent = () => {
               </div>
 
               {/* Card Image Slider */}
-              <div className="w-[311px] relative ">
+              <div className="w-[311px] relative lg:mb-0 mb-4">
                 <div className="w-[311px] h-[72px] bg-black absolute bottom-0 mix-blend-normal opacity-[.5]">
                   <div className="p-2 flex justify-between">
                     <div className="w-[218px] h-[38px]">
