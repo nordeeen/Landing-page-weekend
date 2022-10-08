@@ -3,7 +3,7 @@ import React from 'react';
 const MainContent = () => {
   return (
     <>
-      <div className="w-full h-auto bg-black lg:pt-80 pt-32">
+      <div className="w-full h-auto bg-black lg:pt-60">
         {/* TEXT POV */}
         <div className="flex justify-center items-center">
           <div className="w-[619px] h-auto lg:ml-0 ml-[34px]">
