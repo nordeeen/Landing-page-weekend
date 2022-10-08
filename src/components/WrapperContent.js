@@ -3,6 +3,7 @@ import Header from './Header';
 import Navbar from './Navbar';
 import MainContent from './MainContent';
 import SecondContent from './SecondContent';
+import ThirdContent from './ThirdContent';
 
 const WrapperContent = () => {
   return (
@@ -12,6 +13,7 @@ const WrapperContent = () => {
         <Navbar />
         <MainContent />
         <SecondContent />
+        <ThirdContent />
       </div>
     </>
   );
