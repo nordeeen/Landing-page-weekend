@@ -40,9 +40,9 @@ const Navbar = () => {
           <img
             src={heroRight}
             alt="hero-right"
-            className="w-[125px] h-[125px] absolute lg:top-[750px] top-[620px] right-0"
+            className="w-[125px] h-[125px] absolute lg:top-[650px] top-[620px] right-0"
           />
-          <div className="lg:w-[619px] w-[390px] h-auto lg:px-0 px-8">
+          <div className="lg:w-[619px] w-[390px] h-auto lg:px-0 px-8 pt-60">
             <p className="lg:text-xl text-[18px] text-black font-bold text-right">
               <span className="text-blue-600">Deffinition;</span> a practice or
               exercise to test or improve one's fitness for athletic
