@@ -13,16 +13,12 @@ const Navbar = () => {
           <img
             src={bgContent}
             alt=""
-            style={{
-              width: '100%',
-              height: 'auto',
-              objectFit: 'cover',
-            }}
+            className="w-[100%] h-auto object-cover"
           />
         </div>
         {/* TEXT WEEKEND */}
         <div className="-top-0 left-0 right-0 absolute">
-          <h1 className="text-center font-extrabold text-6xl text-white uppercase mt-20">
+          <h1 className="text-center font-extrabold lg:text-6xl text-white uppercase mt-20 text-5xl">
             weekend from home
           </h1>
           <p className="text-center italic text-1xl text-white mt-2">
@@ -40,20 +36,14 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div className="bg-[#EEBECE] w-auto h-screen flex justify-center items-center pt-40">
+        <div className="bg-[#EEBECE] w-auto h-screen flex justify-center items-center lg:pt-40 -mt-[250px]">
           <img
             src={heroRight}
             alt="hero-right"
-            style={{
-              width: '125px',
-              height: '125px',
-              position: 'absolute',
-              right: '0px',
-              top: '750px',
-            }}
+            className="w-[125px] h-[125px] absolute lg:top-[750px] top-[620px] right-0"
           />
-          <div className="w-[619px] h-auto">
-            <p className="text-xl text-black font-bold text-right">
+          <div className="lg:w-[619px] w-[390px] h-auto lg:px-0 px-8">
+            <p className="lg:text-xl text-[18px] text-black font-bold text-right">
               <span className="text-blue-600">Deffinition;</span> a practice or
               exercise to test or improve one's fitness for athletic
               competition, ability, or performance to exhaust (something, such
@@ -66,13 +56,13 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex justify-center items-center bg-[#EEBECE]">
-          <div className="w-[800px] h-[200px] py-9">
+          <div className="w-[800px] lg:h-[200px] h-[0px] lg:py-9">
             <img
               src={smallOval}
               alt="small-oval"
-              style={{ width: '89px', height: '89px', objectFit: 'contain' }}
+              className="w-[89px] h-[89px] object-contain lg:mt-0 -mt-[220px] lg:ml-0 ml-[50px]"
             />
-            <h2 className="text-center text-3xl py-2 text-white font-bold">
+            <h2 className="lg:text-center text-left lg:ml-0 ml-[34px] lg:mt-0 -mt-6 text-3xl py-2 text-white font-bold">
               Testimonial
             </h2>
           </div>
