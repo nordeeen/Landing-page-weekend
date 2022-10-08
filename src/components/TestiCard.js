@@ -1,62 +1,79 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import arrowRight from 'assets/oval-arrow-right.png';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Autoplay,
+  Virtual,
+} from 'swiper/core';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { getTestimonial } from 'store/reducers';
+
+SwiperCore.use([Navigation, Pagination, Autoplay, Virtual]);
+
+const SliderTesti = props => {
+  return (
+    <div className="w-[247px] h-[140px] bg-[#FFFFFF] p-5">
+      <h1 className="text-black font-black text-left text-[32px] leading-[37.54px]">
+        {props.title}
+      </h1>
+      <div className="w-[207px] h-auto mt-2">
+        <p className="text-xs text-black text-left">{props.desc}</p>
+      </div>
+    </div>
+  );
+};
 
 const TestiCard = () => {
+  const dispatch = useDispatch();
+  const { testi } = useSelector(state => state);
+
+  useEffect(() => {
+    dispatch(getTestimonial());
+  }, [dispatch]);
+
   return (
     <>
-      <div className="w-full h-auto flex justify-center items-center absolute top-[1240px]">
+      <div className="w-full h-auto flex justify-center items-center px-40 bg-[#EEBECE]">
+        {/* Behind Color Black Card */}
+        <div className="bg-black w-full h-[80px] absolute left-0 right-0 mt-20" />
         {/* Arrow Left */}
         <a href="/">
           <img
             src={arrowRight}
             alt="arrow-right"
-            className="w-[32px] h-[32px] rotate-180 mr-[50px]"
+            className="w-[32px] h-[32px] rotate-180 mr-[50px] mt-9"
           />
         </a>
-        {/* Card Slide 1 */}
-        <div className="flex justify-between gap-3">
-          <div className="w-[247px] h-[140px] bg-[#FFFFFF] p-5">
-            <h1 className="text-black font-black text-left text-[32px] leading-[37.54px]">
-              Blue Kicks
-            </h1>
-            <div className="w-[207px] h-auto mt-2">
-              <p className="text-xs text-black text-left">
-                Places where you can leverage tools and software to free up time
-                to focus on growing the business.
-              </p>
-            </div>
-          </div>
-          {/* Card Slide 2 */}
-          <div className="w-[247px] h-[140px] bg-[#FFFFFF] p-5">
-            <h1 className="text-black font-black text-left text-[32px] leading-[37.54px]">
-              Angelus
-            </h1>
-            <div className="w-[207px] h-auto mt-2">
-              <p className="text-xs text-black text-left">
-                All those apps took me months to get running. Now the site
-                practically runs itself!
-              </p>
-            </div>
-          </div>
-          {/* Card Slide 3 */}
-          <div className="w-[247px] h-[140px] bg-[#FFFFFF] p-5">
-            <h1 className="text-black font-black text-left text-[32px] leading-[37.54px]">
-              SoYoung
-            </h1>
-            <div className="w-[207px] h-auto mt-2">
-              <p className="text-xs text-black text-left">
-                Unless you have a truly unique product, it will be very hard to
-                differentiate and gain brand traction
-              </p>
-            </div>
-          </div>
-        </div>
+        <Swiper
+          className="flex "
+          spaceBetween={50}
+          slidesPerView={3}
+          // onSlideChange={() => console.log('slide change')}
+          // onSwiper={swiper => console.log(swiper)}
+          navigation
+          pagination
+        >
+          {testi?.map(data => {
+            return (
+              <SwiperSlide key={data.id}>
+                <SliderTesti title={data.by} desc={data.testimony} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
         {/* Arrow Right */}
         <a href="/">
           <img
             src={arrowRight}
             alt="arrow-right"
-            className="w-[32px] h-[32px] ml-[50px]"
+            className="w-[32px] h-[32px] mr-[50px] rotate-96 absolute"
           />
         </a>
       </div>
