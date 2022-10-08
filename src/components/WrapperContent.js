@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import MainContent from './MainContent';
 import SecondContent from './SecondContent';
 import ThirdContent from './ThirdContent';
+import Footer from './Footer';
 
 const WrapperContent = () => {
   return (
@@ -14,6 +15,7 @@ const WrapperContent = () => {
         <MainContent />
         <SecondContent />
         <ThirdContent />
+        <Footer />
       </div>
     </>
   );
