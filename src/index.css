@@ -89,6 +89,20 @@ body {
   }
 
   @media (min-width: 360px) and (max-width: 375px) {
+    .res-mob-testi {
+      padding-bottom: 0px;
+      margin-top: 0px;
+    }
+  }
+
+  @media (max-width: 428px) {
+    .res-mob-testi {
+      padding-bottom: 0px;
+      margin-top: 0px;
+    }
+  }
+
+  @media (min-width: 360px) and (max-width: 375px) {
     .res-mob-wrapper {
       overflow: hidden;
     }

@@ -72,13 +72,13 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex justify-center items-center bg-[#EEBECE] res-mob-oval">
-          <div className="w-[800px] lg:h-[200px] h-[0px] pb-[30px]">
+          <div className="w-[800px] lg:h-[200px] h-[0px] pb-[30px] res-mob-testi">
             <img
               src={smallOval}
               alt="small-oval"
               className="w-[89px] h-[89px] object-contain lg:mt-0 -mt-[220px] lg:ml-0 ml-[50px]"
             />
-            <h2 className="lg:text-center text-left lg:ml-0 ml-[34px] lg:mt-0 -mt-6 text-3xl text-white font-bold">
+            <h2 className="lg:text-center text-left lg:ml-0 ml-[34px] lg:mt-0 -mt-6 text-3xl text-white font-bold res-mob-testi">
               Testimonial
             </h2>
           </div>
