@@ -3,9 +3,9 @@ import React from 'react';
 const MainContent = () => {
   return (
     <>
-      <div className="w-full h-auto bg-black lg:pt-60">
+      <div className="w-full h-auto bg-black lg:pt-60 res-mob-pov">
         {/* TEXT POV */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center ">
           <div className="w-[619px] h-auto lg:ml-0 ml-[34px]">
             <h1 className="lg:text-center text-left text-white uppercase text-[32px] lg:pb-28 pb-10 font-extrabold">
               pov

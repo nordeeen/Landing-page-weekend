@@ -7,3 +7,71 @@
 body {
   font-family: 'Work Sans';
 }
+
+@layer utilities {
+  @media (max-width: 375px) {
+    .res-mob-h1 {
+      font-size: 52px;
+      line-height: 51px;
+    }
+  }
+}
+
+@layer utilities {
+  @media (max-width: 375px) {
+    .res-mob-bg {
+      width: auto;
+      height: 105%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .res-mob-text {
+      padding-top: 0px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .res-mob-wrapper {
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .res-mob-oval {
+      padding-top: 30px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .res-mob-slider {
+      background-color: red;
+      display: flex;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .res-mob-arrow {
+      display: none;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .res-mob-pov {
+      padding-top: 80px;
+      padding-right: 16px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .res-mob-thirdtext {
+      font-size: 16px;
+      line-height: 24px;
+      padding-right: 16px;
+    }
+  }
+}

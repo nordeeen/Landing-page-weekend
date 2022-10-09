@@ -19,7 +19,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay, Virtual]);
 
 const SliderTesti = props => {
   return (
-    <div className="w-[247px] h-[140px] bg-[#FFFFFF] p-5">
+    <div className="w-[247px] h-[140px] bg-[#FFFFFF] p-5 res-mob-slider">
       <h1 className="text-black font-black text-left text-[32px] leading-[37.54px]">
         {props.title}
       </h1>
@@ -48,7 +48,7 @@ const TestiCard = () => {
           <img
             src={arrowRight}
             alt="arrow-right"
-            className="w-[32px] h-[32px] rotate-180 mr-[50px] mt-9"
+            className="w-[32px] h-[32px] rotate-180 mr-[50px] mt-9 res-mob-arrow"
           />
         </a>
         <Swiper
@@ -73,7 +73,7 @@ const TestiCard = () => {
           <img
             src={arrowRight}
             alt="arrow-right"
-            className="w-[32px] h-[32px] mr-[50px] rotate-96 absolute"
+            className="w-[32px] h-[32px] mr-[50px] rotate-96 absolute res-mob-arrow"
           />
         </a>
       </div>

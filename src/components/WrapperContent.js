@@ -10,7 +10,7 @@ import Footer from './Footer';
 const WrapperContent = () => {
   return (
     <>
-      <div className="w-full h-auto">
+      <div className="w-full h-auto res-mob-wrapper">
         <Header />
         <Navbar />
         <TestiCard />

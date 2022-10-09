@@ -14,7 +14,7 @@ const ThirdContent = () => {
               <h1 className="lg:text-center text-left lg:ml-0 ml-[34px] text-white font-bold text-[32px] mb-6">
                 You’re all set.
               </h1>
-              <p className="lg:text-center text-left lg:ml-0 ml-[34px] lg:w-[600px] w-[340px] text-white text-lg">
+              <p className="lg:text-center text-left lg:ml-0 ml-[34px] lg:w-[600px] w-[340px] text-white text-lg res-mob-thirdtext">
                 The wise man therefore always holds in these matters to this
                 principle of selection.
               </p>

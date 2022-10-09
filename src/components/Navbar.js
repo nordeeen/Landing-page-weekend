@@ -13,12 +13,12 @@ const Navbar = () => {
           <img
             src={bgContent}
             alt=""
-            className="w-[100%] h-auto object-cover"
+            className="w-[100%] h-auto object-cover res-mob-bg"
           />
         </div>
         {/* TEXT WEEKEND */}
         <div className="-top-0 left-0 right-0 absolute">
-          <h1 className="text-center font-extrabold lg:text-6xl text-white uppercase mt-20 text-5xl">
+          <h1 className="text-center font-extrabold lg:text-6xl text-white uppercase mt-20 res-mob-h1">
             weekend from home
           </h1>
           <p className="text-center italic text-1xl text-white mt-2">
@@ -26,11 +26,7 @@ const Navbar = () => {
           </p>
           {/* Hero Content */}
           <div className="flex justify-center items-center py-20 relative">
-            <img
-              src={hero}
-              alt=""
-              style={{ width: '184px', height: '305px' }}
-            />
+            <img src={hero} alt="" className="w-[184px] h-[305px]" />
             <button className="bg-white py-4 px-[80px] rounded-3xl absolute mt-[165px] text-center outline-none">
               Let's Go
             </button>
@@ -42,7 +38,7 @@ const Navbar = () => {
             alt="hero-right"
             className="w-[125px] h-[125px] absolute lg:top-[650px] top-[620px] right-0"
           />
-          <div className="lg:w-[619px] w-[390px] h-auto lg:px-0 px-8 pt-60">
+          <div className="lg:w-[619px] w-[390px] h-auto lg:px-0 px-8 pt-60 res-mob-text">
             <p className="lg:text-xl text-[18px] text-black font-bold text-right">
               <span className="text-blue-600">Deffinition;</span> a practice or
               exercise to test or improve one's fitness for athletic
@@ -55,7 +51,7 @@ const Navbar = () => {
             </h2>
           </div>
         </div>
-        <div className="flex justify-center items-center bg-[#EEBECE]">
+        <div className="flex justify-center items-center bg-[#EEBECE] res-mob-oval">
           <div className="w-[800px] lg:h-[200px] h-[0px] pb-[30px]">
             <img
               src={smallOval}
