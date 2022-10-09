@@ -9,12 +9,21 @@ const SecondContent = () => {
     <>
       <div className="w-full h-auto pt-9 bg-black">
         <div className="flex lg:justify-center lg:items-center">
-          <h1 className="text-white text-[32px] lg:text-center text-left lg:ml-0 ml-[34px] font-extrabold pb-5">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="text-white text-[32px] lg:text-center text-left lg:ml-0 ml-[34px] font-extrabold pb-5"
+          >
             Help & Tips
           </h1>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="flex justify-center items-center"
+        >
           <div className="w-[1000px] lg:h-[200px] h-[600px]">
             <div className="flex justify-between lg:flex-row flex-col lg:ml-0 ml-[34px]">
               {/* Card Image Slider */}

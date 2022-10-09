@@ -6,7 +6,11 @@ const MainContent = () => {
       <div className="w-full h-auto bg-black lg:pt-60 res-mob-pov">
         {/* TEXT POV */}
         <div className="flex justify-center items-center ">
-          <div className="w-[619px] h-auto lg:ml-0 ml-[34px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="w-[619px] h-auto lg:ml-0 ml-[34px]"
+          >
             <h1 className="lg:text-center text-left text-white uppercase text-[32px] lg:pb-28 pb-10 font-extrabold">
               pov
             </h1>
@@ -22,7 +26,11 @@ const MainContent = () => {
 
         {/* TEXT RESOURCES */}
         <div className="flex justify-center items-center text-white mt-20 pb-20">
-          <div className="w-[619px] h-auto lg:ml-0 ml-[34px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="w-[619px] h-auto lg:ml-0 ml-[34px]"
+          >
             <h1 className="lg:text-center text-left text-white text-[32px] lg:pb-20 pb-10 font-extrabold">
               Resource
             </h1>
