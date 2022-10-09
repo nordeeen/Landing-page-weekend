@@ -17,7 +17,10 @@ const WrapperContent = () => {
 
   return (
     <>
-      <div className="w-full h-auto res-mob-wrapper">
+      <div
+        className="w-full h-auto res-mob-wrapper"
+        style={{ scrollBehavior: 'smooth' }}
+      >
         <Header />
         <HeroContent />
         <TestiCard />
