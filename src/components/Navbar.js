@@ -13,7 +13,7 @@ const Navbar = () => {
           <img
             src={bgContent}
             alt=""
-            className="w-[100%] h-auto object-cover res-mob-bg"
+            className="w-[100%] h-auto object-cover res-mob-bg res-mob"
           />
         </div>
         {/* TEXT WEEKEND */}
@@ -21,7 +21,7 @@ const Navbar = () => {
           <h1
             data-aos="fade-down"
             data-aos-duration="1000"
-            className="text-center font-extrabold lg:text-6xl text-white uppercase mt-20 res-mob-h1"
+            className="text-center font-extrabold lg:text-6xl text-white uppercase mt-20 res-mob-title"
           >
             weekend from home
           </h1>

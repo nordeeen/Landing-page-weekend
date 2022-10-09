@@ -9,33 +9,53 @@ body {
 }
 
 @layer utilities {
-  @media (max-width: 375px) {
-    .res-mob-h1 {
+  @media (min-width: 360px) and (max-width: 375px) {
+    .res-mob-title {
       font-size: 52px;
       line-height: 51px;
     }
   }
 
-  @media (max-width: 375px) {
+  @media (min-width: 360px) and (max-width: 428px) {
+    .res-mob-title {
+      font-size: 52px;
+      line-height: 51px;
+    }
+  }
+
+  @media (min-width: 360px) and (max-width: 375px) {
     .res-mob-bg {
       width: auto;
       height: 105%;
     }
   }
 
-  @media (max-width: 375px) {
+  @media (min-width: 360px) and (max-width: 428px) {
+    .res-mob {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  @media (min-width: 360px) and (max-width: 375px) {
     .res-mob-text {
       padding-top: 0px;
     }
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 428px) {
+    .res-mob-text {
+      padding-top: 0px;
+    }
+  }
+
+  @media (min-width: 360px) and (max-width: 375px) {
     .res-mob-wrapper {
       overflow: hidden;
     }
   }
 
-  @media (max-width: 375px) {
+  @media (min-width: 360px) and (max-width: 375px) {
     .res-mob-oval {
       padding-top: 30px;
       font-size: 32px;
@@ -43,7 +63,7 @@ body {
     }
   }
 
-  @media (max-width: 375px) {
+  @media (min-width: 360px) and (max-width: 375px) {
     .res-mob-slider {
       background-color: red;
       width: 100%;
@@ -51,13 +71,13 @@ body {
     }
   }
 
-  @media (max-width: 375px) {
+  @media (min-width: 360px) and (max-width: 375px) {
     .res-mob-arrow {
       display: none;
     }
   }
 
-  @media (max-width: 375px) {
+  @media (min-width: 360px) and (max-width: 375px) {
     .res-mob-pov {
       padding-top: 80px;
       padding-right: 16px;
@@ -66,7 +86,7 @@ body {
     }
   }
 
-  @media (max-width: 375px) {
+  @media (min-width: 360px) and (max-width: 375px) {
     .res-mob-thirdtext {
       font-size: 16px;
       line-height: 24px;
