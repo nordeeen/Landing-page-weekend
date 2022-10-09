@@ -4,7 +4,7 @@ import hero from 'assets/Bitmap.png';
 import heroRight from 'assets/hero-right.png';
 import smallOval from 'assets/small-oval.png';
 
-const Navbar = () => {
+const HeroContent = () => {
   return (
     <>
       <nav className="w-full h-auto bg-[#EEBECE] relative">
@@ -88,4 +88,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default HeroContent;
