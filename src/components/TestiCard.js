@@ -1,25 +1,31 @@
 import React, { useEffect } from 'react';
 import arrowRight from 'assets/oval-arrow-right.png';
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Autoplay,
-  Virtual,
-} from 'swiper/core';
-import { useDispatch, useSelector } from 'react-redux';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
+// import SwiperCore, {
+//   Navigation,
+//   Pagination,
+//   Autoplay,
+//   Virtual,
+// } from 'swiper/core';
+
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import 'swiper/css/navigation';
+
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
 import { getTestimonial } from 'store/reducers';
 
-SwiperCore.use([Navigation, Pagination, Autoplay, Virtual]);
+import { useDispatch, useSelector } from 'react-redux';
+import { Pagination, Navigation } from 'swiper';
+
+// SwiperCore.use([Navigation, Pagination, Autoplay, Virtual]);
 
 const SliderTesti = props => {
   return (
-    <div className="w-[247px] h-[140px] bg-[#FFFFFF] p-5">
+    <div className="w-[247px] h-[140px] bg-[#FFFFFF] p-5 res-wrapper-slider">
       <h1 className="text-black font-black text-left text-[32px] leading-[37.54px]">
         {props.title}
       </h1>
@@ -40,9 +46,12 @@ const TestiCard = () => {
 
   return (
     <>
-      <div className="w-full h-auto flex justify-center items-center px-40 bg-[#EEBECE]">
+      <div
+        className="w-full h-auto flex justify-center items-center px-40 
+      bg-[#EEBECE] res-wrapper"
+      >
         {/* Behind Color Black Card */}
-        <div className="bg-black w-full h-[80px] absolute left-0 right-0 mt-20" />
+        <div className="bg-[black] w-full h-[80px] absolute left-0 right-0 mt-20 res-cek" />
         {/* Arrow Left */}
         <a href="/">
           <img
@@ -52,13 +61,14 @@ const TestiCard = () => {
           />
         </a>
         <Swiper
-          className="flex res-mob-slider"
-          spaceBetween={50}
           slidesPerView={3}
-          // onSlideChange={() => console.log('slide change')}
-          // onSwiper={swiper => console.log(swiper)}
-          navigation
-          pagination
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
         >
           {testi?.map(data => {
             return (
