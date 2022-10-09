@@ -19,7 +19,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay, Virtual]);
 
 const SliderTesti = props => {
   return (
-    <div className="w-[247px] h-[140px] bg-[#FFFFFF] p-5 res-mob-slider">
+    <div className="w-[247px] h-[140px] bg-[#FFFFFF] p-5">
       <h1 className="text-black font-black text-left text-[32px] leading-[37.54px]">
         {props.title}
       </h1>
@@ -52,7 +52,7 @@ const TestiCard = () => {
           />
         </a>
         <Swiper
-          className="flex "
+          className="flex res-mob-slider"
           spaceBetween={50}
           slidesPerView={3}
           // onSlideChange={() => console.log('slide change')}
